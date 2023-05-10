@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider{
+    appearance: none;
+    background-color: #291D32 ;
+    
+    height: 0.75rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+    
+}
+.copymsg{
+    opacity: 0;
+    transition: all 250ms ease-in-out ;
+    transform: scale(0);
+
+}
+.active{
+    opacity: 1;
+    transition: all 250ms ease-in-out ;
+    transform: scale(1.1);
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    position: relative;
+    
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: #F1F6F9; 
+    cursor: pointer;
+    width: 1.4rem;
+    transition: all 250ms ease-in;
+    
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: #F1F7B5;
+    box-shadow:0px 0px 22px  #FCE9D9;
+    outline: 1.9px solid #FEFF86;
+}
+
+.slider:focus{
+
+    outline: 1.9px solid #FEFF86;
+}
+
+
+/* for fireFox slider
+.slider::-moz-range-thumb{
+    appearance: none;
+    position: relative;
+    
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: #F1F6F9; 
+    cursor: pointer;
+    width: 1.4rem;
+    transition: all 250ms ease-in;
+    
+}
+
+*/
